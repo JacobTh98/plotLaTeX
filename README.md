@@ -12,7 +12,7 @@ To use the package
    ```bash
    git https://github.com/JacobTh98/plotLaTeX.git
 
-2. **Navigate to the directory**
+2. **Navigate to the directory**  
    Change into the directory of the cloned repository:
    ```bash
    cd plotLaTeX
@@ -21,15 +21,7 @@ To use the package
    ```bash
    pip install -r requirements.txt
 
-5. **Install the package locally**
+4. **Install the package locally**  
    Install the Python package in editable mode using the following command:
    ```bash
    pip install -e .
-
-
-7. **Verify the installation**
-   Test the installation by importing the package in Python:
-   ```bash
-   python
-   >>> import package_name
-   >>> print(package_name.__version__)
