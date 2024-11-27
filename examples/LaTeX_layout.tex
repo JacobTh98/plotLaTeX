@@ -24,8 +24,8 @@ The following are some examples of applications of the plot\LaTeX package.
     \tikzstyle{every node}=[font=\footnotesize]
     \begin{tikzpicture}
         \begin{axis}[
-            ylabel={Relative error in \%},
-            xlabel={Index $k$},
+            ylabel={y-label},
+            xlabel={x-label},
             % xtick={0,1,...,10},
             width=7.5cm,
             height=3cm,
@@ -33,7 +33,7 @@ The following are some examples of applications of the plot\LaTeX package.
             scale only axis,
             axis background/.style={fill=white},
             grid=both,
-            legend columns = 3,
+            legend columns = 2,
             legend style={at={(0,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south west},
          ]
         \addplot[] 
@@ -42,9 +42,6 @@ The following are some examples of applications of the plot\LaTeX package.
         \addplot[] 
         	table[x=x,y=cos,col sep=comma]{test_results.csv};
         \addlegendentry{cos};
-        \addplot[] 
-        	table[x=x,y=sinxcos,col sep=comma]{test_results.csv};
-        \addlegendentry{sinxcos};
         \end{axis}
     \end{tikzpicture}
     \caption{Caption of the plot.}
