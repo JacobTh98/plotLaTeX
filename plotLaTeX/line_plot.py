@@ -35,6 +35,9 @@ class LinePlot:
         print("**Export**\n")
         self.data_info()
         pd.DataFrame(self.data_stack).to_csv(path + f_name, index=False)
+        print("\n***********")
+        print("LaTeX code:")
+        print("***********\n")
         self.LaTeXcode()
 
     def LaTeXcode(self, imports=False, caption="Caption of the plot."):
