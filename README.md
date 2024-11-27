@@ -1,9 +1,10 @@
-# plotLaTeX
-Package for exporting Python data to a LaTex plot.
+# plot $\LaTeX$
+
+The `plotLaTeX` package is a recent project to make exporting Python data to a LaTex plot easier.
 
 ## Installation
 
-At the moment there is no [pip](https://pypi.org/) release available. Probably in the future...
+At the moment, no [pip](https://pypi.org/) release is available. Probably in the future...
 
 To use the package
 
@@ -25,3 +26,12 @@ To use the package
    Install the Python package in editable mode using the following command:
    ```bash
    pip install -e .
+
+
+## Call for Collaboration
+
+I welcome all ideas and new pull requests.
+If you have any ideas or problems, don't hesitate to contact me.
+
+Email: `jacob.thoenes@uni-rostock.de`
+
