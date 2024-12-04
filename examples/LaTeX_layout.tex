@@ -4,6 +4,11 @@
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.18}
 
+\usepackage{siunitx}
+
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{units}
+
 \definecolor{mycolor1}{rgb}{0.54, 0.00, 0.45}
 \definecolor{mycolor2}{rgb}{0.61, 0.51, 0.11}
 \definecolor{mycolor3}{rgb}{0.59, 0.66, 0.16}
@@ -37,15 +42,47 @@ The following are some examples of applications of the plot\LaTeX package.
             legend style={at={(0,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south west},
          ]
         \addplot[] 
-        	table[x=x,y=sin,col sep=comma]{test_results.csv};
+        	table[x=x,y=sin,col sep=comma]{line_results.csv};
         \addlegendentry{sin};
         \addplot[] 
-        	table[x=x,y=cos,col sep=comma]{test_results.csv};
+        	table[x=x,y=cos,col sep=comma]{line_results.csv};
         \addlegendentry{cos};
         \end{axis}
     \end{tikzpicture}
     \caption{Caption of the plot.}
     \label{fig:Caption of the plot.}
+\end{figure}
+
+\subsection{Histogram plot}
+
+\begin{figure}[h]
+    \centering
+    \tikzstyle{every node}=[font=\footnotesize]
+    \begin{tikzpicture}
+        \begin{axis}[
+            ylabel=Count,
+            xlabel=x-label,
+            % xtick={0,1,...,10},
+            width=7.5cm,
+            bar width=1,
+            height=3cm,
+            at={(0cm,0cm)},
+            scale only axis,
+            axis background/.style={fill=white},
+            grid=both,
+            legend columns = 2,
+            legend style={at={(0,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south west},
+         ]
+        \addplot[ybar,width=1,fill, fill opacity=0.3, red] 
+        	table[x=data1xs,y=data1cnt,col sep=comma]{hist_results.csv};
+        \addlegendentry{data1};
+        \addplot[ybar,fill, fill opacity=0.3, black] 
+        	table[x=data2xs,y=data2cnt,col sep=comma]{hist_results.csv};
+        \addlegendentry{data2};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Caption of the histogram.}
+    \label{fig:Caption of the histogram.}
 \end{figure}
 
 \end{document}
