@@ -24,7 +24,7 @@ The following are some examples of applications of the plot\LaTeX package.
 
 \subsection{Multiple line plot}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \tikzstyle{every node}=[font=\footnotesize]
     \begin{tikzpicture}
@@ -63,8 +63,8 @@ The following are some examples of applications of the plot\LaTeX package.
             ylabel=Count,
             xlabel=x-label,
             % xtick={0,1,...,10},
+            % bar width=7pt,
             width=7.5cm,
-            bar width=1,
             height=3cm,
             at={(0cm,0cm)},
             scale only axis,
@@ -73,10 +73,10 @@ The following are some examples of applications of the plot\LaTeX package.
             legend columns = 2,
             legend style={at={(0,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south west},
          ]
-        \addplot[ybar,width=1,fill, fill opacity=0.3, red] 
+        \addplot[ybar,fill, fill opacity=0.3, red, ybar legend] 
         	table[x=data1xs,y=data1cnt,col sep=comma]{hist_results.csv};
         \addlegendentry{data1};
-        \addplot[ybar,fill, fill opacity=0.3, black] 
+        \addplot[ybar,fill, fill opacity=0.3, black, ybar legend] 
         	table[x=data2xs,y=data2cnt,col sep=comma]{hist_results.csv};
         \addlegendentry{data2};
         \end{axis}

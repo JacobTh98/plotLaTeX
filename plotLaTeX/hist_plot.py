@@ -71,7 +71,7 @@ class HistPlot:
         print(r"         ]")
         # plot all y_list components
         for yn in self.hist_name_list:
-            print(r"        \addplot[ybar,fill, fill opacity=0.3, black] ")
+            print(r"        \addplot[ybar,fill, fill opacity=0.3, black, ybar legend] ")
             print(
                 f"        	table[x={yn}xs,y={yn}cnt,col sep=comma]"
                 + r"{"
