@@ -4,23 +4,18 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
 
 ## Examples
 
-**Line**
+**[Line](examples/LinePlot.ipynb)**
 
 <p align="center">
     <img src="images/example_line_plot.png" alt="Fig1" width="1000px">
 </p>
-<p>
-    <em><b>Figure 1: </b>[Line plot example](examples/LinePlot.ipynb)</em>
-</p>
 
-**Histogram**
+**[Histogram](examples/HistPlot.ipynb)**
 
 <p align="center">
     <img src="images/example_hist_plot.png" alt="Fig2" width="1000px">
 </p>
-<p>
-    <em><b>Figure 1: </b>[Histogram plot example](examples/HistPlot.ipynb)</em>
-</p>
+
 
 ## Installation
 
@@ -46,7 +41,6 @@ To use the package
    Install the Python package in editable mode using the following command:
    ```bash
    pip install -e .
-
 
 ## Call for Collaboration
 
