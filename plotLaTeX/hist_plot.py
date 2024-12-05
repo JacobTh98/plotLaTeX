@@ -57,6 +57,7 @@ class HistPlot:
         print(f"            ylabel={self.ylabel},")
         print(f"            xlabel={self.xlabel},")
         print(r"            % xtick={0,1,...,10},")
+        print(r"            % bar width=7pt,")
         print(r"            width=7.5cm,")
         print(r"            height=3cm,")
         print(r"            at={(0cm,0cm)},")

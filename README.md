@@ -2,22 +2,24 @@
 
 The `plotLaTeX` package is a recent project to make exporting Python data to a LaTex plot easier.
 
-**Line plot example**
+## Examples
+
+**Line**
 
 <p align="center">
     <img src="images/example_line_plot.png" alt="Fig1" width="1000px">
 </p>
 <p>
-    <em><b>Figure 1: </b>Direct conversion of a Python Matplotlib plot to LaTeX. The coloring, line style and other parameters can be adjusted.</em>
+    <em><b>Figure 1: </b>[Line plot example](examples/LinePlot.ipynb)</em>
 </p>
 
-**Hist plot example**
+**Histogram**
 
 <p align="center">
     <img src="images/example_hist_plot.png" alt="Fig2" width="1000px">
 </p>
 <p>
-    <em><b>Figure 2: </b>Direct conversion of a Python Matplotlib plot to LaTeX. The coloring, line style and other parameters can be adjusted.</em>
+    <em><b>Figure 1: </b>[Histogram plot example](examples/HistPlot.ipynb)</em>
 </p>
 
 ## Installation
