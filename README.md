@@ -11,6 +11,15 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
     <em><b>Figure 1: </b>Direct conversion of a Python Matplotlib plot to LaTeX. The coloring, line style and other parameters can be adjusted.</em>
 </p>
 
+**Hist plot example**
+
+<p align="center">
+    <img src="images/example_hist_plot.png" alt="Fig2" width="1000px">
+</p>
+<p>
+    <em><b>Figure 2: </b>Direct conversion of a Python Matplotlib plot to LaTeX. The coloring, line style and other parameters can be adjusted.</em>
+</p>
+
 ## Installation
 
 At the moment, no [pip](https://pypi.org/) release is available. Probably in the future...
@@ -20,7 +29,7 @@ To use the package
 1. **Clone the repository**  
    Open a terminal or command prompt and clone the repository using the following command:
    ```bash
-   git https://github.com/JacobTh98/plotLaTeX.git
+   git clone https://github.com/JacobTh98/plotLaTeX.git
 
 2. **Navigate to the directory**  
    Change into the directory of the cloned repository:
