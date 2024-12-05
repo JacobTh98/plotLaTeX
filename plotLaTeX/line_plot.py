@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 class LinePlot:
@@ -6,6 +7,7 @@ class LinePlot:
         # self.config = config
         self.data_stack = dict()
         self.y_name_list = list()
+        self.x_vals = None
 
     def data_info(self):
         print("Current data stack:")
@@ -22,6 +24,7 @@ class LinePlot:
         self.data_info()
 
     def add_yvals(self, y_vals, y_name):
+        self.n_y_vals = len(y_vals)
         if y_name in self.y_name_list:
             print("Please use a different name to add more data.")
         else:
@@ -31,6 +34,8 @@ class LinePlot:
         self.data_info()
 
     def export(self, path="", f_name="line_results.csv"):
+        if self.x_vals == None:
+            self.data_stack["x"] = np.arange(self.n_y_vals)
         self.f_name = f_name
         print("**Export**\n")
         self.data_info()
