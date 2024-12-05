@@ -16,4 +16,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     url="https://github.com/JacobTh98/plotLaTeX",
+    packages=setuptools.find_packages(include=["plotLaTeX", "plotLaTeX.*"]),
 )
