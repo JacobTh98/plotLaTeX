@@ -16,6 +16,12 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
     <img src="images/example_hist_plot.png" alt="Fig2" width="1000px">
 </p>
 
+**[Boxplot](examples/BoxPlot.ipynb)**
+
+<p align="center">
+    <img src="images/example_box.png" alt="Fig3" width="1000px">
+</p>
+
 
 ## Installation
 
