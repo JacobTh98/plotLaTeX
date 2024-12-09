@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
     name="plotLaTeX",
     version="0.1.0",
-    author="Jacob Thönes",
+    author="Jacob P. Thönes",
     author_email="jacob.thoenes@uni-rostock.de",
     description="Package for exporting plots for LaTeX",
     long_description=open("README.md").read(),
@@ -16,4 +16,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     url="https://github.com/JacobTh98/plotLaTeX",
+    packages=setuptools.find_packages(include=["plotLaTeX", "plotLaTeX.*"]),
 )

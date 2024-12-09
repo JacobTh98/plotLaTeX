@@ -4,6 +4,6 @@ plotLaTeX.egg-info/
 *.ipynb_checkpoints
 engineering.ipynb
 *.csv
-images/line_latex.png
-images/line_python.png
+images/*_latex.png
+images/*_python.png
 *.drawio
