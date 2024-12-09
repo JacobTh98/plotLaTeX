@@ -7,8 +7,8 @@ def calculate_props(data):
     q1 = np.percentile(data, 25)
     q3 = np.percentile(data, 75)
     iqr = q3 - q1
-    lower_whisker = max(data[data >= q1 - 1.5 * iqr], default=np.min(data))
-    upper_whisker = min(data[data <= q3 + 1.5 * iqr], default=np.max(data))
+    lower_whisker = data[data >= (q1 - 1.5 * iqr)].min()
+    upper_whisker = data[data <= (q3 + 1.5 * iqr)].max()
     return {
         "median": median,
         "lower_quartile": q1,
