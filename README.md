@@ -22,6 +22,22 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
     <img src="images/example_box.png" alt="Fig3" width="1000px">
 </p>
 
+**[Barplot](examples/BarPlot.ipynb)**
+
+<p align="center">
+    <img src="images/example_sbar_plot.png" alt="Fig4" width="1000px">
+</p>
+<p align="center">
+    <img src="images/example_mbar_plot.png" alt="Fig5" width="1000px">
+</p>
+<p align="center">
+    <img src="images/example_stbar_plot.png" alt="Fig6" width="1000px">
+</p>
+
+**TBD**
+
+- 3D scatter
+
 
 ## Installation
 

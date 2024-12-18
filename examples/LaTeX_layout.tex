@@ -115,8 +115,8 @@ The following are some examples of applications of the plot\LaTeX\,package.
                 median=128.73043708220285,
                 upper quartile=134.05952052012063,
                 lower quartile=123.99094329503548,
-                upper whisker=103.80254895910255,
-                lower whisker=148.52278184508938
+                upper whisker=148.52278184508938,
+                lower whisker=110.12431085399108
                             },
         ] coordinates {};
             \addplot[
@@ -126,8 +126,8 @@ The following are some examples of applications of the plot\LaTeX\,package.
                 median=81.68214339893669,
                 upper quartile=90.76340895325481,
                 lower quartile=63.886789536848525,
-                upper whisker=41.62457569401917,
-                lower whisker=134.40338333179238
+                upper whisker=129.26484224970574,
+                lower whisker=41.62457569401917
                             },
         ] coordinates {};
             \addplot[
@@ -137,8 +137,8 @@ The following are some examples of applications of the plot\LaTeX\,package.
                 median=122.93087226956357,
                 upper quartile=141.13312343712607,
                 lower quartile=100.33669378132858,
-                upper whisker=22.761979797927822,
-                lower whisker=235.58194471964163
+                upper whisker=189.43975700020525,
+                lower whisker=59.24572240027179
                             },
         ] coordinates {};
         \end{axis}
@@ -146,5 +146,129 @@ The following are some examples of applications of the plot\LaTeX\,package.
     \caption{Caption of the boxplot.}
     \label{fig:Caption of the boxplot.}
 \end{figure}
+
+
+\subsection{Bar chart}
+
+\subsubsection{Default}
+
+\begin{figure}[ht]
+    \centering
+    \tikzstyle{every node}=[font=\footnotesize]
+    \begin{tikzpicture}
+        \begin{axis}[
+            ylabel=Sales,
+            xlabel=Fruits,
+            xticklabels={Apples,Bananas,Cherries},
+            ybar,
+            bar width=0.5cm,
+            xtick=data,
+            width=7.5cm,
+            height=3cm,
+            at={(0cm,0cm)},
+            scale only axis,
+            axis background/.style={fill=white},
+            grid=both,
+            legend columns = 1,
+            legend style={at={(1,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south east},
+        ]
+
+        \addplot[fill=black!70!black,opacity=0.7]  
+        coordinates {(1,345) (2,234) (3,512)};
+
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Caption of the default barchart.}
+    \label{fig:Caption of the default barchart.}
+\end{figure}
+
+
+\newpage
+\subsubsection{Multiple}
+
+\begin{figure}[ht]
+\centering
+\tikzstyle{every node}=[font=\footnotesize]
+\begin{tikzpicture}
+    \begin{axis}[
+            ylabel=Sales,
+            xlabel=Fruits,
+            xtick={ 0, 1, 2 },
+            xticklabels={ Apples, Bananas, Cherries },
+            ybar,
+            bar width=0.3cm,
+            xtick=data,
+            width=7.5cm,
+            height=3cm,
+            at={(0cm,0cm)},
+            scale only axis,
+            axis background/.style={fill=white},
+            grid=both,
+            legend columns = 3,
+            legend style={at={(1,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south east},
+    ]
+        \addplot[fill=black!70!black,opacity=0.7]
+            coordinates {(1,345) (2,234) (3,512)};
+        \addlegendentry{2022};
+
+        \addplot[fill=blue!70!black,opacity=0.7]
+            coordinates {(1,420) (2,304) (3,412)};
+        \addlegendentry{2023};
+
+        \addplot[fill=brown!70!black,opacity=0.7]
+            coordinates {(1,501) (2,324) (3,242)};
+        \addlegendentry{2024};
+
+
+    \end{axis}
+\end{tikzpicture}
+    \caption{Caption of the barchart.}
+    \label{fig:Caption of the barchart.}
+\end{figure}
+
+
+\subsubsection{Stacked}
+
+\begin{figure}[ht]
+\centering
+\tikzstyle{every node}=[font=\footnotesize]
+\begin{tikzpicture}
+    \begin{axis}[
+            ylabel=Sales,
+            xlabel=Fruits,
+            xtick={ 0, 1, 2 },
+            xticklabels={ Apples, Bananas, Cherries },
+            ybar stacked,
+            bar width=0.3cm,
+            xtick=data,
+            width=7.5cm,
+            height=3cm,
+            at={(0cm,0cm)},
+            scale only axis,
+            axis background/.style={fill=white},
+            grid=both,
+            legend columns = 3,
+            legend style={at={(1,1.05)}, legend cell align=left, align=left, draw=white!15!black, mark options={draw=none}, anchor=south east},
+    ]
+        \addplot[fill=black!70!black,opacity=0.7]
+            coordinates {(1,345) (2,234) (3,512)};
+        \addlegendentry{2022};
+
+        \addplot[fill=blue!70!black,opacity=0.7]
+            coordinates {(1,420) (2,304) (3,412)};
+        \addlegendentry{2023};
+
+        \addplot[fill=brown!70!black,opacity=0.7]
+            coordinates {(1,501) (2,324) (3,242)};
+        \addlegendentry{2024};
+
+
+    \end{axis}
+\end{tikzpicture}
+    \caption{Caption of the barchart.}
+    \label{fig:Caption of the barchart.}
+\end{figure}
+
+
 
 \end{document}
