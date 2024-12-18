@@ -22,6 +22,11 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
     <img src="images/example_box.png" alt="Fig3" width="1000px">
 </p>
 
+**TBD**
+
+- Bar plot
+- 3D scatter
+
 
 ## Installation
 
