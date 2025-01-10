@@ -34,10 +34,17 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
     <img src="images/example_stbar_plot.png" alt="Fig6" width="1000px">
 </p>
 
+**[Stemplot](examples/StemPlot.ipynb)**
+
+<p align="center">
+    <img src="images/example_stem.png" alt="Fig3" width="1000px">
+</p>
+
+
 **TBD**
 
 - 3D scatter
-
+- Poles Zeros plot
 
 ## Installation
 
