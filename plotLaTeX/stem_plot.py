@@ -56,7 +56,7 @@ class StemPlot:
             print(f"            ymax={np.max(self.y_vals)+1.0},")
             print(f"            xmin={np.min(self.x_vals)-0.5},")
             print(f"            xmax={np.max(self.x_vals)+0.5},")
-            y_ticks = np.arange(np.min(self.y_vals), np.max(self.y_vals))
+            y_ticks = np.arange(np.min(self.y_vals), np.max(self.y_vals) + 1)
             print(r"            xtick={" + ",".join(map(str, self.x_vals)) + "},")
             print(r"            ytick={" + ",".join(map(str, y_ticks)) + "},")
 
