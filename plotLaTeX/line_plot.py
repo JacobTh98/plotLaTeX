@@ -34,7 +34,7 @@ class LinePlot:
         self.data_info()
 
     def export(self, path="", f_name="line_results.csv"):
-        if self.x_vals == None:
+        if self.x_vals is None or len(self.x_vals) == 0:
             self.data_stack["x"] = np.arange(self.n_y_vals)
         self.f_name = f_name
         print("**Export**\n")
