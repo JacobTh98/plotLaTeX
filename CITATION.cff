@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+title: plotLaTeX
+abstract: The plotLaTeX package is a recent project to make exporting Python data to a LaTex document easier.
+authors:
+  - given-names: Jacob P.
+    family-names: Thönes
+    email: jacob.thoenes@uni-rostock.de
+    affiliation: University of Rostock
+    orcid: 'https://orcid.org/0000-0003-2826-5281'
+version: 0.1.0
+date-released: "2025-01-15"
+license: Apache-2.0
+repository-code: "https://github.com/JacobTh98/plotLaTeX"
