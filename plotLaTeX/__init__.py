@@ -3,5 +3,14 @@ from .hist_plot import HistPlot
 from .box_plot import BoxPlot
 from .bar_plot import Barplot, MultipleBars
 from .stem_plot import StemPlot
+from .scatter_plot import ScatterPlot
 
-__all__ = ["LaTeXplot", "HistPlot", "BoxPlot", "Barplot", "MultipleBars", "StemPlot"]
+__all__ = [
+    "LaTeXplot",
+    "HistPlot",
+    "BoxPlot",
+    "Barplot",
+    "MultipleBars",
+    "StemPlot",
+    "ScatterPlot",
+]

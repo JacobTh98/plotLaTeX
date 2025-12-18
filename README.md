@@ -37,7 +37,13 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
 **[Stemplot](examples/StemPlot.ipynb)**
 
 <p align="center">
-    <img src="images/example_stem.png" alt="Fig3" width="1000px">
+    <img src="images/example_stem.png" alt="Fig7" width="1000px">
+</p>
+
+**[Scatterplot](examples/ScatterPlot.ipynb)**
+
+<p align="center">
+    <img src="images/example_scatter.png" alt="Fig8" width="1000px">
 </p>
 
 
