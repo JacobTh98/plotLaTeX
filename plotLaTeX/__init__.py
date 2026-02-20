@@ -4,6 +4,7 @@ from .box_plot import BoxPlot
 from .bar_plot import Barplot, MultipleBars
 from .stem_plot import StemPlot
 from .scatter_plot import ScatterPlot
+from .confusionmatrix import ConfusionMatrix
 
 __all__ = [
     "LaTeXplot",
@@ -13,4 +14,5 @@ __all__ = [
     "MultipleBars",
     "StemPlot",
     "ScatterPlot",
+    "ConfusionMatrix",
 ]
