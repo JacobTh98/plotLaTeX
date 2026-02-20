@@ -46,6 +46,11 @@ The `plotLaTeX` package is a recent project to make exporting Python data to a L
     <img src="images/example_scatter.png" alt="Fig8" width="1000px">
 </p>
 
+**[Confusion Matrix](examples/ConfusionMatrix.ipynb)**
+
+<p align="center">
+    <img src="images/example_cm.png" alt="Fig9" width="1000px">
+</p>
 
 **TBD**
 
